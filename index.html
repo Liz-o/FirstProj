@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Example</title>
+    <style>
+        img{
+            transition: width 2s linear; 
+        }
+        img:hover {
+            /* width: 800px; */
+            animation:spin 4s linear infinite;
+            animation-name: spin;
+            animation-duration: 4000ms;
+            animation-iteration-count: 1; 
+            /* animation-iteration-count: infinite;  */
+            animation-timing-function: linear;
+        }
+        @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+    </style>
+</head>
+<body>
+    <div style="width:100px; height:150px;">
+        <!--img src="../images/freebirds.jpg" /-->
+        Hello world
+    </div>
+    
+</body>
+</html>
